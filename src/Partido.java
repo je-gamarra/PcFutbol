@@ -50,8 +50,10 @@ public class Partido {
 
         System.out.println("****************************");
 
-        System.out.print(golesLocal + " " + local.getNombre()+ "-");
-        System.out.println(golesVisitante + " " + local.getNombre());
+        System.out.print(golesLocal + " " + local.getNombre()+ " - ");
+        System.out.print(golesVisitante + " " + visitante.getNombre());
+
+        System.out.println();
 
         System.out.println("****************************"); 
 

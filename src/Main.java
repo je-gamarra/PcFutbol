@@ -1,6 +1,7 @@
 package src;
-
 import java.util.Set;
+
+import javax.security.sasl.RealmCallback;
 
 public class Main {
 
@@ -13,16 +14,16 @@ public static void main(String[] args) {
 
     torneo.addFecha(fecha);
 
-    Equipo barsa = new Equipo(); 
-    barsa.setNombre("Real Madrid");
-
     Equipo real = new Equipo(); 
-    real.setNombre("Barcelona");
+    real.setNombre("Real Madrid");
+
+    Equipo barsa = new Equipo(); 
+    barsa.setNombre("Barcelona");
 
     for (int i = 0; i < 5; i++ ){
 
         Jugador jug = new Jugador();
-        jug.setNombre("i + _BARSA");
+        jug.setNombre(i + "_BARSA");
         jug.setPromedio(7);
         real.addJugador(jug);
     }
@@ -30,7 +31,7 @@ public static void main(String[] args) {
     for (int i = 0; i < 5; i++ ){
 
         Jugador jug = new Jugador();
-        jug.setNombre("i + _REAL MADRID");
+        jug.setNombre(i + "_MADRID");
         jug.setPromedio(9); 
         barsa.addJugador(jug);
     }
@@ -42,7 +43,7 @@ public static void main(String[] args) {
 
     partido.setEstadio(estadio);
     partido.setLocal(real);
-    partido.setVisitante(real);
+    partido.setVisitante(barsa);
     
 
     partido.jugarResultado();

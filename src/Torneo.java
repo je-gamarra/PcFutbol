@@ -12,13 +12,18 @@ public class Torneo {
 
     private ArrayList<Fecha> fechas;
 
-    public void addFecha(Fecha fecha){
+    public Torneo(){
 
         if (fechas == null)
 
            fechas = new ArrayList<>();
 
+        
+    }
+
+    public void addFecha(Fecha fecha){
         fechas.add(fecha);
+      
 
     }
 
