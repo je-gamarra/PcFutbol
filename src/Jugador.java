@@ -1,8 +1,7 @@
 package src;
 
-public class Jugador {
+public class Jugador extends Empleado implements Jugable{
 
-    private String nombre;
 
     private int numeroCamiseta; 
 
@@ -20,13 +19,7 @@ public class Jugador {
 
     private float promedio;
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+   
 
     public int getNumeroCamiseta() {
         return numeroCamiseta;
@@ -90,14 +83,28 @@ public class Jugador {
 
     public void setPromedio(float promedio) {
         this.promedio = promedio;
+    }
+
+    @Override
+    public void mover() {
+
+        int x = 0, y = 0;
+
+        x++;
+        y++;
+
+        y = y*2;
+        x = x*2;
+
+       
+    }
+
+    @Override
+    public void festejar() {
+        System.out.println(":)");
+        
+      
     } 
- 
-    
-
-
-
-
-
 
     
 }

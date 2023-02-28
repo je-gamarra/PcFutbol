@@ -11,7 +11,7 @@ public static void main(String[] args) {
     torneo.setNombre(" La Liga");
 
     Fecha fecha = new Fecha(1); 
-
+ 
     torneo.addFecha(fecha);
 
     Equipo real = new Equipo(); 

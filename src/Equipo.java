@@ -77,6 +77,9 @@ public class Equipo {
 
     public void setFundacion(int fundacion) {
         this.fundacion = fundacion;
+
+        
+        
     } 
 
     
